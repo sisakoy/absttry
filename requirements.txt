@@ -21,6 +21,7 @@ httpx
 lxml
 motor
 mutagen
+mega-pip
 markdown
 natsort
 pillow
