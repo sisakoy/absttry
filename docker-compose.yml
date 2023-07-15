@@ -1,10 +1,12 @@
-version: "3.3"
+version: "2"
 
 services:
-  app:
+
+  web:
     build: .
-    command: bash start.sh
-    restart: on-failure
+    volumes:
+      - .:/app
+    restart: always
+    command: sh start.sh
     ports:
-      - "80:80"
-      - "8080:8080"
+      - 8080:8080
